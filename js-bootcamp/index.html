@@ -23,7 +23,7 @@
 <body>
 
     <div id="wrapper">
-
+        <div class="overlay"></div>
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -33,16 +33,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">About me</a>
+                    <a href="#about">About me</a>
                 </li>
                 <li>
-                    <a href="#">My Portfolio</a>
+                    <a href="#portfolio">My Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact me</a>
+                    <a href="#contact">Contact me</a>
                 </li>
             </ul>
         </div>
@@ -52,6 +52,11 @@
         <div id="page-content-wrapper">
           <div class="container-fluid">
             <div class="row title-section">
+                <a name="home"></a>
+                <div class="col-md-12">
+                    <button class="btn menu-btn"></button>
+                </div>
+
                 <div class="col-md-10 col-md-offset-2 web-title">
                     <h1>First Last name</h3>
                     <span>what I do... subtitle</span>    
@@ -59,6 +64,7 @@
             </div>
 
             <div class="row about-section">
+                <a name="about"></a>
                 <h1 class="text-center">About me</h1>
                 <div class="col-md-10 col-md-offset-2">
 
@@ -74,9 +80,10 @@
             </div>
 
             <div class="row portfolio-section">
+                <a name="portfolio"></a>
                 <h1 class="text-center">My portfolio</h1>
                 <div class="col-md-12">
-                    <div class="container-fluid portfolio-img-preview active"> 
+                    <div class="container-fluid portfolio-img-preview"> 
                         <div class="row">
                             <div class="col-md-12">
                                 <div>
@@ -94,7 +101,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
+                                  <a href="#" class="preview-img-active">
                                     <img src="imgs/portfolio-1.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
@@ -104,7 +111,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
+                                  <a href="#" class="preview-img-active">
                                     <img src="imgs/portfolio-2.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
@@ -114,7 +121,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
+                                  <a href="#" class="preview-img-active">
                                     <img src="imgs/portfolio-3.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
@@ -126,8 +133,8 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
-                                    <img src="imgs/portfolio-1.jpg" style="width:100%">
+                                  <a href="#" class="preview-img-active">
+                                    <img src="imgs/portfolio-4.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
                                     </div>
@@ -136,8 +143,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
-                                    <img src="imgs/portfolio-1.jpg" style="width:100%">
+                                  <a href="#" class="preview-img-active">
+                                    <img src="imgs/portfolio-5.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
                                     </div>
@@ -146,8 +153,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                  <a href="#">
-                                    <img src="imgs/portfolio-1.jpg" style="width:100%">
+                                  <a href="#" class="preview-img-active">
+                                    <img src="imgs/portfolio-6.jpg" style="width:100%">
                                     <div class="caption">
                                       <p>Lorem ipsum...</p>
                                     </div>
@@ -162,6 +169,7 @@
 
 
             <div class="row contact-section">
+                <a name="contact"></a>
                 <h1 class="text-center">Contact me</h1>
                 <div class="container-fluid">
                     <form>
