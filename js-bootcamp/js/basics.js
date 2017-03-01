@@ -19,8 +19,8 @@ var personObject = {
 }
 
 //Writting to console
-// console.log(z)
-// console.log(carsArray)
+console.log(z)
+console.log(carsArray)
 
 //defining functions 
 function myFirstFunction(name) {
@@ -29,7 +29,7 @@ function myFirstFunction(name) {
 
 	var msgContent = "Hello there," + name 
 
-	// console.log(msgContent)
+	console.log(msgContent)
 }
 
 //calling function 
@@ -41,8 +41,8 @@ var mySecondFunction = function(car){
 	return msgContent
 }
 
-// calling and loging function in same line and passing array element as function param
-// console.log(mySecondFunction(carsArray[1]))
+// calling and loging function in same line and passing array element as function parameter
+console.log(mySecondFunction(carsArray[1]))
 
 // Loops 
 for (var i = 0; i < carsArray.length; i++) {
@@ -55,30 +55,30 @@ for (element in personObject) {
 
 //callbacks 
 
-// function parentFunction(callback) {
-// 	//lets set some variable
-// 	var someString = "Hello there"
+function parentFunction(callback) {
+	//lets set some variable
+	var someString = "Hello there"
 
-// 	callback(someString) // whatever parameters we define here will ber passed to our callbackFunction
-// }
+	callback(someString) // whatever parameters we define here will be passed to our callbackFunction
+}
 
-// function callbackFunction(someString) {
-// 	//display alert
-// 	alert(someString)
-// }
+function callbackFunction(someString) {
+	//display alert
+	alert(someString)
+}
 
-//parentFunction(callbackFunction)
+parentFunction(callbackFunction)
 
 //alternate callbacks the jquery way
 
-// var myFunction = function(callback) {
-// 	var msgContent = "Hello world!"
-// 	callback(msgContent)
-// }
+var myFunction = function(callback) {
+	var msgContent = "Hello world!"
+	callback(msgContent)
+}
 
-// myFunction(function(msgContent){
-// 	alert(msgContent)
-// })
+myFunction(function(msgContent){
+	alert(msgContent)
+})
 
 
 // Using jquery
@@ -151,20 +151,17 @@ $(document).ready(function(){
 			$('.comments').append('<p>' + comments[comment].msg + '</p>')
 		}
 	}
-
 	
 	$('#comment-btn').click(function(){
 		console.log("comment")
-		var msg = $('#input-comment').val()
 		var username = $('#input-username').val()
-
+		var msg = $('#input-comment').val()
+		
 		var comment = {username: username, msg: msg}
 
 		comments.push(comment)
 		showComments()
 	})
-
-
 })
 
 
